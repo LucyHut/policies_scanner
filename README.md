@@ -15,3 +15,7 @@ This tool will be intended for use by users to save time when evaluating
 if they want to use an application or service provided by that website.
 
 ```
+### Policies_scanner
+
+### Useful resources
+* Extraction of Opt-Out Choices from Privacy Policies using BERT
