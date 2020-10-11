@@ -1,14 +1,13 @@
-# policies_scanner
 
 ## Engineering Privacy, COS 598
 
-## Project Title : Privacy Policies: Opting in and out of private data collection post GDPR
-## Project Authors
+### Project Title : Privacy Policies: Opting in and out of private data collection post GDPR
+### Project Authors
 
 * Lucie Hutchins
 * Timothy Bruce 
 
-## Project Description
+### Project Description
 
 ``` 
 create or modify a tool for extracting opting policy from given websites in an automated manner.
