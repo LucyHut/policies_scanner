@@ -23,4 +23,5 @@ if they want to use an application or service provided by that website.
 ```
 ### Useful resources
 * Extraction of Opt-Out Choices from Privacy Policies using BERT
-** https://canvas.eee.uci.edu/courses/14385/files/5940142/download?wrap=1
+
+--  https://canvas.eee.uci.edu/courses/14385/files/5940142/download?wrap=1
