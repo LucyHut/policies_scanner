@@ -5,7 +5,8 @@
 ## Project Title : Privacy Policies: Opting in and out of private data collection post GDPR
 ## Project Authors
 
-Lucie Hutchins <​lucie.ndzana@maine.edu​> Timothy Bruce <​timothy.bruce@maine.edu​>
+* Lucie Hutchins
+* Timothy Bruce 
 
 ## Project Description
 
