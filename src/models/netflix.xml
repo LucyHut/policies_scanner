@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Netflix">
+   <link id="Main">
+      <label><![CDATA[Netflix Main Page]]></label>
+      <url><![CDATA[https://www.netflix.com]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[This Privacy Statement explains our practices, including your choices, regarding the collection, use, and disclosure of certain information, including your personal information, by the Netflix family of companies ("Netflix") in connection with the Netflix service.]]></desc>
+      <url><![CDATA[https://help.netflix.com/legal/privacy]]></url>
+      <optout>
+       <label>Your Choices</label>
+       <url type="email"><![CDATA[privacy@netflix.com]]></url>
+      </optout>
+  </link>
+</site>
