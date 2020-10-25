@@ -8,12 +8,12 @@
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[]]></desc>
       <url><![CDATA[]]></url>
-      <optin type="voluntary">
-         <label><![CDATA[]]></label>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Privacy Checkup</label>
-       <url type="cookies|link|email|phone"><![CDATA[]]></url>
+       <label>Privacy</label>
+       <url type="cookies|link|email|phone|form|settings"><![CDATA[]]></url>
       </optout>
   </link>
 </site>

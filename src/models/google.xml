@@ -13,6 +13,9 @@
        ]]>
       </desc>
       <url><![CDATA[https://policies.google.com/privacy?hl=en]]></url>
+       <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>      
       <optout>
        <label>Privacy Checkup</label>
        <url type="link">
