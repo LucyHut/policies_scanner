@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>Privacy Checkup</label>
-       <url><![CDATA[]]></url>
+       <url type="cookies|link|email|phone"><![CDATA[]]></url>
       </optout>
   </link>
 </site>

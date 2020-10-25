@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="MaineHealth">
+   <link id="Main">
+      <label><![CDATA[MaineHealth Main Page]]></label>
+      <url><![CDATA[https://www.mainehealth.org]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Patient Rights & Privacy]]></label>
+      <desc><![CDATA[This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully.]]></desc>
+      <url><![CDATA[https://www.mainehealth.org/Patients-Visitors/Patient-Rights-Privacy]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>Opting Out of Health Information Exchanges</label>
+       <url type="form"><![CDATA[Fill a form]]></url>
+       <url type="phone"><![CDATA[Toll free number]]></url>
+      </optout>
+  </link>
+</site>
