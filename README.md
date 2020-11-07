@@ -65,6 +65,11 @@ Usage examples :
  2) The privacy policy url takes precendence if both urls are provided
  3) The url provided is a valid url of either the controller main site or the privacy policy document
  4) The document rendered is an html document
+ 5) The tool must detect the Opt-in section within the privacy policy document
+ 6) The tool must detect the Opt-out section within the privacy policy document
+ 7) The tool must detect the email option within an Opt-out/Opt-in section where available
+ 8) The tool must detect the toll-free phone number wihtin an Opt-out/Opt-in section where available
+ 9) The tool must detect links within an Opt-out/Opt-in section where available
  ```
  ### Software Requirements
  ```
