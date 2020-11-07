@@ -26,6 +26,7 @@ if they want to use an application or service provided by that website.
 ```
 A Python program that extracts the Opt-in and Opt-out sections from a given Privacy Policy html document.
 A sample of 40 policies of controllers ranging from healthcare to education is used as a training model.
+
 ```
 ### Training Models
 
@@ -33,8 +34,9 @@ We created a xml model to represent a policy document. Each model stores two typ
  1) Information about the controller a label and a link to the controller main page
  2) Information about the privacy policy. The ....
 
-Model sample:
+### Model sample:
 
+```
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="fec.gov">
    <link id="Main">
