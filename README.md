@@ -1,7 +1,5 @@
 
-## Engineering Privacy, COS 598
-
-### Project Title : Privacy Policies: Opting in and out of private data collection post GDPR
+## Engineering Privacy, COS 598: Privacy Policies: Opting in and out of private data collection post GDPR
 
 ### Project Authors
 
@@ -16,16 +14,50 @@ This tool will be intended for use by users to save time when evaluating
 if they want to use an application or service provided by that website.
 
 ```
-### Policies_scanner
+# Quick Links
+
+- [Privacy Policy Extractor ](#privacy-policy-extractor)
+- [Training Models](#training-models)
+- [How it works](#how-it-works)
+- [Tool and Software Requirements](#tool-and-software-requirements)
+
+### Privacy Policy Extractor
 
 ```
- Coming soon
- 
+A Python program that extracts the Opt-in and Opt-out sections from a given Privacy Policy html document.
+A sample of 40 policies of controllers ranging from healthcare to education is used as a training model.
 ```
+### Training Models
+
+We created a xml model to represent a policy document. Each model stores two types of information:
+ 1) Information about the controller a label and a link to the controller main page
+ 2) Information about the privacy policy. The ....
+
+Model sample:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="fec.gov">
+   <link id="Main">
+      <label><![CDATA[FEC.gov Main Page]]></label>
+      <url><![CDATA[https://www.fec.gov/]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy and security policy]]></label>
+      <desc><![CDATA[Thank you for visiting the FEC website and reviewing our privacy and security statement. This webpage outlines our privacy and security policy as it applies to our site as well as third-party sites and applications that the FEC uses.]]></desc>
+      <url><![CDATA[https://www.fec.gov/about/privacy-and-security-policy/]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>How to opt out or disable cookies</label>
+       <url type="cookies"><![CDATA[Cookies setting]]></url>
+      </optout>
+  </link>
+</site>
+```
+
 ### How it works
 
-
-### Usage
 ```
 Usage: PROG [-h] --curl=main_page_url [--purl=policy_page_url]
  Where:
@@ -57,7 +89,7 @@ Usage examples :
        3) Python3 is used and all the dependencies have been installed 
 ```
 
-### Software and tool Requirements
+###  Tool and Software Requirements
 
 #### Tool Requirements 
 ```
