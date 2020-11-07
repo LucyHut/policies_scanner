@@ -71,7 +71,7 @@ The tool extracts the Opt-out and Opt-in sections from a given privacy policy do
 
 # This function draws from the links.txt file for URLs.
 def main():
-    driver = webdriver.Chrome()
+    ##driver = 
 
     policies = []
     url_file = open('links.txt', "r")           # Read link file
@@ -85,11 +85,10 @@ def main():
         if policyObject.extracted_policy is not None:
             print("Extracted " + policyObject.policy_url)
 
-
 # Class for storing policy information
 class Policy:
-    def __init__(self, website_url, selenium_driver, policy_url=None, extracted_policy=None):
-        self.driver = selenium_driver           # Selenium driver for extracting information.
+    def __init__(self, website_url=None, policy_url=None, extracted_policy=None):
+        self.driver = webdriver.Chrome()      # Selenium driver for extracting information.
         self.url = website_url                  # Url of the website's main page
         if policy_url is not None:
             self.policy_url = policy_url        # URL of the privacy policy
@@ -158,5 +157,7 @@ if __name__== "__main__":
         prog_usage()
         sys.exit()
     display_header()
+    currentDirectory = os.getcwd()
+    print("%s - %s"%(currentDirectory, basename(__file__)))
     ##main()
     sys.exit()

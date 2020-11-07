@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Merck">
+   <link id="Main">
+      <label><![CDATA[Merck Main Page]]></label>
+      <url><![CDATA[https://www.merck.com/]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Internet Privacy Policy]]></label>
+      <desc><![CDATA[Our privacy program and practices comply with the EU Binding Corporate rules (BCR) and the APEC Cross-Border Privacy Rules system for transfers of personal information from the European Economic Area and Switzerland as well as from the Asia-Pacific Economic Cooperation member states (respectively) to, amongst other places to the United States. This policy is consistent with our Global Cross Border Privacy Rules Policy. Please read this policy carefully. Should you have any questions about this policy or our data collection, use and disclosure practices, please contact us.]]></desc>
+      <url><![CDATA[https://www.msdprivacy.com/us/en/internet-privacy-policy/]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>What choices do you have</label>
+       <url type="cookies"><![CDATA[Internet browsers]]></url>
+      </optout>
+  </link>
+</site>

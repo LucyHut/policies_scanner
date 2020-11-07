@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="xxx">
+   <link id="Main">
+      <label><![CDATA[xxx Main Page]]></label>
+      <url><![CDATA[]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[]]></desc>
+      <url><![CDATA[]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>Privacy</label>
+       <url type="cookies|link|email|phone|form|settings"><![CDATA[]]></url>
+      </optout>
+  </link>
+</site>

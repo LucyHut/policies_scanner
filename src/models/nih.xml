@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="NIH">
+   <link id="Main">
+      <label><![CDATA[NIH Main Page]]></label>
+      <url><![CDATA[https://www.nih.gov]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[Protecting your privacy is very important to us. Our Web site links to other National Institutes of Health (NIH) sites, federal agency sites and occasionally, to private organizations. Once you leave the primary NIH.gov site, you are subject to the privacy policy for the site(s) you are visiting. We do not collect any personally identifiable information (PII) about you during your visit to NIH Web sites unless you choose to provide it to us. We do, however, collect some data about your visit to our Web site to help us better understand how the public uses the site and how to make it more helpful. We collect information from visitors who read, browse, and/or download information from our Web site. NIH never collects information for commercial marketing or any purpose unrelated to the NIH mission and goals]]></desc>
+      <url><![CDATA[https://www.nih.gov/web-policies-notices]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>How to Opt Out or Disable Cookies</label>
+       <url><![CDATA[https://www.usa.gov/optout-instructions]]></url>
+      </optout>
+  </link>
+</site>
