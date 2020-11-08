@@ -17,6 +17,7 @@ if they want to use an application or service provided by that website.
 # Quick Links
 
 - [Privacy Policy Extractor ](#privacy-policy-extractor)
+- [Directory Structure](#directory-structure)
 - [Training Models](#training-models)
 - [How it works](#how-it-works)
 - [Tool and Software Requirements](#tool-and-software-requirements)
