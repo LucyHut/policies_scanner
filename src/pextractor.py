@@ -9,7 +9,7 @@ import re
 import getopt,os,sys
 from  datetime import datetime
 
-from os.path import isdir,dirname,abspath,basename
+from os.path import isdir,dirname,join,abspath,basename
 
 from urllib.parse import urlparse
 
@@ -158,6 +158,7 @@ if __name__== "__main__":
         sys.exit()
     display_header()
     currentDirectory = os.getcwd()
-    print("%s - %s"%(currentDirectory, basename(__file__)))
+    model_dir=join(currentDirectory,"models")
+    print("%s - %s - %s"%(currentDirectory, basename(__file__),model_dir))
     ##main()
     sys.exit()
