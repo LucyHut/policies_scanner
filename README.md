@@ -45,9 +45,14 @@ src/
 
 ### Training Models
 
-We created a xml model to represent a policy document. Each model stores two types of information:
- 1) Information about the controller a label and a link to the controller main page
- 2) Information about the privacy policy. The ....
+   40 Controllers ranging from healthcare, finance, to education were manually selected by the researchers and their website’s privacy policies used in this research as the training models. These policies were selected and reviewed manually.  For each controller, the website main page was used as the point of entry to search for its privacy policy link. Next, the policy itself was reviewed and scanned, looking for Opt-in and Opt-out sections  and the different choices  of Opt-out/Opt-in the controller makes available to the user. 
+
+The review process turned out to be more challenging than anticipated as there was no structure or standards shared between these policy documents. In addition, the section header label for Opt-in and Opt-out options varies from one controller to another making it hard to predict the beginning of an Opt-in/Opt-out section within a given document. Moreover, most of these policies did not even have an Opt-in section. Furthermore, the Opt-out choices did not follow a specific structure. For example, it would be easier if all the options available to the user to Opt-in/Opt-out a given policy are provided in structural form – say a list of choices – with a user-friendly label signaling the list and the type of choices. 
+
+The lack of structure and standards from Privacy Policy documents makes it hard to create an automation that detects and extracts these Opt-in/Opt-out options. To that end, an xml model was created for each Privacy policy. These xml models were used as the training model for our policy-extractor tool. Each model stores two types of information:
+
+1.	Information about the controller - a label and a link to the controller main page
+2.	Information about the privacy policy – page tittle, first_paragraph, page_url,  optin, optout. 
 
 ### Model sample:
 
