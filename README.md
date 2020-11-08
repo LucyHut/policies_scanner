@@ -28,6 +28,21 @@ A Python program that extracts the Opt-in and Opt-out sections from a given Priv
 A sample of 40 policies of controllers ranging from healthcare to education is used as a training model.
 
 ```
+### Directory Structure
+
+There is a src sub-directory and under that directory we have: 
+
+* a subdirectory called models that contains model xml files,
+* pextractor.py  which is the main program - still work in progress 
+* pmodel.py  which a module that implements the structure and  actions on training models - still work in progress
+
+```
+src/
+   models/ 	
+   pextractor.py	
+   pmodel.py
+```
+
 ### Training Models
 
 We created a xml model to represent a policy document. Each model stores two types of information:
