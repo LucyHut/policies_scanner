@@ -48,10 +48,11 @@ class Model:
 '''
 Args:
      models base directory
+
 Returns:
-     Load the xml element into an object
+     List of models and that actions on these models
 Raises:
-    Issues with the model file
+    Issues with the models directory
 
 '''
 class Models:
