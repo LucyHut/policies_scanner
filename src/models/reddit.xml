@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="reddit">
+   <link id="Main">
+      <label><![CDATA[Reddit Main Page]]></label>
+      <url><![CDATA[https://reddit.com]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Reddit Privacy Policy]]></label>
+      <desc><![CDATA[]]></desc>
+      <url><![CDATA[https://www.redditinc.com/policies/privacy-policy]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>Your Choices</label>
+       <url type="settings"><![CDATA[https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fsettings]]></url>
+       <url type="cookies"><![CDATA[https://www.redditinc.com/policies/cookies]]></url>
+      </optout>
+  </link>
+</site>

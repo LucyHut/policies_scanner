@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Slack">
+   <link id="Main">
+      <label><![CDATA[Slack Main Page]]></label>
+      <url><![CDATA[https://app.slack.com/]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[This Privacy Policy describes how Slack collects, uses and discloses information, and what choices you have with respect to the information.]]></desc>
+      <url><![CDATA[https://slack.com/trust/privacy/privacy-policy]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>Your Rights</label>
+       <url type="settings"><![CDATA[https://slack.com/account/settings]]></url>
+       <url type="cookies"><![CDATA[https://slack.com/trust/compliance/cookie-policy]]></url>
+      </optout>
+  </link>
+</site>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Zoom">
+   <link id="Main">
+      <label><![CDATA[Zoom Main Page]]></label>
+      <url><![CDATA[https://zoom.us]]></url>
+   </link>
+   <link id="Privacy Policy">
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[This Statement applies to the personal data we process as a data controller, that is, as the party that determines what data to collect and why. You provide some of this data directly, and we get some of it by collecting data about your interactions, use, and experiences with the Services. The data we collect depends on the context of your interactions with Zoom and the choices you make, including the products and features you use. We also obtain data about you from third parties.]]></desc>
+      <url><![CDATA[https://www.zoom.us/privacy]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+         <url type="cookies"><![CDATA[]]></url>
+      </optin>
+      <optout>
+       <label>Privacy</label>
+       <url type="settings"><![CDATA[]]></url>
+       <url type="email"><![CDATA[]]></url>
+       <url type="cookies"><![CDATA[]]></url>
+      </optout>
+  </link>
+</site>
