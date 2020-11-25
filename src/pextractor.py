@@ -18,7 +18,7 @@ from urllib.parse import urlparse
 
 '''
 Organization: The University Of Maine
-Authora: Tim Bruce and Lucie N. Hutchins
+Authors: Tim Bruce and Lucie N. Hutchins
 Date: November 2020
 '''
 def display_header():
