@@ -6,10 +6,11 @@ import re
 
 '''
 '''
-import getopt,os,sys
-from  datetime import datetime
+import getopt, os, sys
+from datetime import datetime
 
-from os.path import isdir,dirname,join,abspath,basename
+from os.path import isdir, dirname, join, abspath, basename
+import pmodel
 
 from urllib.parse import urlparse
 
@@ -70,25 +71,24 @@ The tool extracts the Opt-out and Opt-in sections from a given privacy policy do
 
 
 # This function draws from the links.txt file for URLs.
-def main():
-    ##driver = 
-
+def multiple_policy_extraction(urls=[], policy_urls=[]):
     policies = []
-    url_file = open('links.txt', "r")           # Read link file
-    for url in url_file.readlines():            # For every url, instantiate the Policy class with the url
-        policies.append(Policy(url, driver))
-
-    url_file.close()                            # Close the browser and file
-    driver.close()
+    if urls:
+        for url in urls:            # For every url, instantiate the Policy class with the url
+            policies.append(Policy(website_url=url))
+    if policy_urls:
+        for url in policy_urls:
+            policies.append(Policy(policy_url=url))
 
     for policyObject in policies:               # Output verification
         if policyObject.extracted_policy is not None:
             print("Extracted " + policyObject.policy_url)
+    return policies
+
 
 # Class for storing policy information
 class Policy:
     def __init__(self, website_url=None, policy_url=None, extracted_policy=None):
-        self.driver = webdriver.Chrome()      # Selenium driver for extracting information.
         self.url = website_url                  # Url of the website's main page
         if policy_url is not None:
             self.policy_url = policy_url        # URL of the privacy policy
@@ -102,8 +102,10 @@ class Policy:
 
     # Extract the privacy policy URL from the homepage of the website.
     def retrieve_policy_url(self):
-        self.driver.get(self.url)
-        policy_html = self.driver.page_source
+        driver = webdriver.Chrome()
+        driver.get(self.url)
+        policy_html = driver.page_source
+        driver.close()
         soup = BeautifulSoup(policy_html, 'html.parser')
 
         links = soup.find_all('a')
@@ -120,16 +122,20 @@ class Policy:
 
     # Extract the privacy policy from the URL.
     def retrieve_policy(self):
+        driver = webdriver.Chrome()
         if self.policy_url is not None:
             try:
                 self.driver.get(self.policy_url)
             except se.InvalidArgumentException:
                 print("Failed " + self.policy_url)
+                driver.close()
                 return None
         else:
+            driver.close()
             return None
         policy_html = self.driver.page_source
         soup = BeautifulSoup(policy_html, 'html.parser')
+        driver.close()
         return soup
 
 if __name__== "__main__":
@@ -159,6 +165,10 @@ if __name__== "__main__":
     display_header()
     currentDirectory = os.getcwd()
     model_dir=join(currentDirectory,"models")
+
+    # These two lines are for when the XML component is implemented
+    #models = pmodel.Models(model_dir=model_dir)
+    #print(models.models_list)
+
     print("%s - %s - %s"%(currentDirectory, basename(__file__),model_dir))
-    ##main()
     sys.exit()

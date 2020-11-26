@@ -8,7 +8,7 @@ Authors:
    Tim Bruce
 """
 
-##import os
+import os
 from os.path import join, isfile,isdir
 import xml.etree.ElementTree as ET
 
@@ -70,7 +70,7 @@ class Models:
     def getModelsList(self,model_dir):
         file_list=None
         try:
-            file_list=[f for f in listdir(model_dir) if isfile(join(model_dir,f))]
+            file_list=[f for f in os.listdir(model_dir) if isfile(join(model_dir,f))]
         except:raise
         return file_list
 
