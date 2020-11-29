@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Google">
-  <link id="Main">
+  <main_page>
      <label><![CDATA[Google Main Page]]></label>
      <url><![CDATA[https://google.com]]></url>
-  </link>
-  <link id="Privacy Policy">
+  </main_page>
+  <privacy_policy>
      <label><![CDATA[Privacy Policy]]></label>
       <desc>
        <![CDATA[
@@ -22,5 +22,5 @@
         <![CDATA[https://myaccount.google.com/privacycheckup?utm_source=pp&utm_medium=Promo-in-product&utm_campaign=pp_intro&hl=en]]>
        </url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

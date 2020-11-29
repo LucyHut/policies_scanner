@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="fec.gov">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[FEC.gov Main Page]]></label>
       <url><![CDATA[https://www.fec.gov/]]></url>
-   </link>
-   <link id="Privacy Policy">
+   </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy and security policy]]></label>
       <desc><![CDATA[Thank you for visiting the FEC website and reviewing our privacy and security statement. This webpage outlines our privacy and security policy as it applies to our site as well as third-party sites and applications that the FEC uses.]]></desc>
       <url><![CDATA[https://www.fec.gov/about/privacy-and-security-policy/]]></url>
@@ -15,5 +15,5 @@
        <label>How to opt out or disable cookies</label>
        <url type="cookies"><![CDATA[Cookies setting]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

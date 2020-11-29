@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="COVIDWISE">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Virginia Department of Health COVIDWISE Main Page]]></label>
       <url><![CDATA[https://www.vdh.virginia.gov/covidwise/]]></url>
-   </link>
-   <link id="Privacy Policy">
+  </main_page>
+  <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[This “Privacy Policy” explains how the Virginia Department of Health (“VDH”) collects, uses, discloses and otherwise processes end users’ data in connection with the COVIDWISE mobile application (“COVIDWISE App”). This Privacy Policy also describes the choices available to individuals with respect to data when using the COVIDWISE App.]]></desc>
       <url><![CDATA[https://www.vdh.virginia.gov/covidwise/privacy-policy/]]></url>
@@ -15,5 +15,5 @@
        <label>OPTING OUT OF PUSH NOTIFICATIONS</label>
        <url type="settings"><![CDATA[You can deactivate push notifications and alerts at any time by deleting the COVIDWISE App, changing your device settings, or changing the push notification settings within the COVIDWISE App.]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

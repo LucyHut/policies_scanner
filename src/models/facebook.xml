@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Facebook">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Facebook Main Page]]></label>
       <url><![CDATA[https://facebook.com]]></url>
-   </link>
-   <link id="Privacy Policy">
+  </main_page>
+  <privacy_policy>
       <label><![CDATA[Data Policy]]></label>
       <desc><![CDATA[This policy describes the information we process to support Facebook, Instagram, Messenger and other products and features offered by Facebook (Facebook Products or Products). You can find additional tools and information in the Facebook Settings and Instagram Settings.]]></desc>
       <url><![CDATA[https://www.facebook.com/privacy/explanation]]></url>
@@ -16,5 +16,5 @@
        <url type="settings"><![CDATA[https://www.facebook.com/settings]]></url>
        <url type="cookies"><![CDATA[https://www.facebook.com/policies/cookies]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

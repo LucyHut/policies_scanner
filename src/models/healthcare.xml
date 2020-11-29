@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Healthcare.gov">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Healthcare.gov Main Page]]></label>
       <url><![CDATA[https://www.healthcare.gov]]></url>
-   </link>
-   <link id="Privacy Policy">
+   </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[Protecting your privacy is very important to us. We’re telling you about our privacy policy so you know what information we collect, why we collect it, and what we do with it. This privacy notice is for HealthCare.gov, CuidadoDeSalud.gov, and other Healthcare.gov subdomains such as Finder.HealthCare.gov.]]></desc>
       <url><![CDATA[https://www.healthcare.gov/privacy/]]></url>
@@ -15,5 +15,5 @@
        <label>Your choices about tracking and data collection</label>
        <url type="form"><![CDATA[A popup Opt-out form]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>
