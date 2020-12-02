@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="twitter">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Twitter Main Page]]></label>
       <url><![CDATA[https://twitter.com]]></url>
-   </link>
-   <link id="Privacy Policy">
+    </main_page>
+    <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[We give you control through your settings to limit the data we collect from you and how we use it, and to control things like account security, marketing preferences, apps that can access your account, and address book contacts you’ve uploaded to Twitter. You can also download information you have shared on Twitter.]]></desc>
       <url><![CDATA[https://twitter.com/settings/privacy_and_safety]]></url>
@@ -16,5 +16,5 @@
        <url type="settings"><![CDATA[https://twitter.com/settings/account]]></url>
        <url type="cookies"><![CDATA[https://help.twitter.com/en/rules-and-policies/twitter-cookies]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="USDA">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[USDA Main Page]]></label>
       <url><![CDATA[https://www.usda.gov/]]></url>
-   </link>
-   <link id="Privacy Policy">
+    </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[Thank you for visiting the United States Department of Agriculture (USDA) website and reviewing our privacy statement. Our privacy policy is clear: We do not collect any personal identifiable information, (PII), without your explicit consent.]]></desc>
       <url><![CDATA[https://www.usda.gov/privacy-policy]]></url>
@@ -15,5 +15,5 @@
        <label>Cookies</label>
        <url type="cookies"><![CDATA[Cookies settings]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

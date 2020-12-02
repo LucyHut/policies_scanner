@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Whatsapp">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Whatsapp Main Page]]></label>
       <url><![CDATA[whatsapp.com]]></url>
-   </link>
-   <link id="Privacy Policy">
+   </main_page>
+   <privacy_policy>
       <label><![CDATA[WhatsApp Privacy Policy]]></label>
       <desc><![CDATA[If you live in the European Region, WhatsApp Ireland Limited provides WhatsApp to you under this Terms of Service and Privacy Policy.]]></desc>
       <url><![CDATA[https://www.whatsapp.com/legal/privacy-policy]]></url>
@@ -16,5 +16,5 @@
          <url type="settings"><![CDATA[see facebook]]></url>
          <url type="cookies"><![CDATA[see facebook]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

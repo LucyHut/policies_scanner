@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Northern Light">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Northern Light Main Page]]></label>
       <url><![CDATA[https://northernlighthealth.org/]]></url>
-   </link>
-   <link id="Privacy Policy">
+   </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[Northern Light Health, its member organizations, and strategic affiliates have created the online security and privacy policy in order to implement our firm commitment to protecting the integrity of confidential information, and the manner in which this information is used. The following discloses our information gathering and dissemination practices for this website for the organizations.]]></desc>
       <url><![CDATA[https://northernlighthealth.org/Legal/Privacy-Statement]]></url>
@@ -12,5 +12,5 @@
        <label><![CDATA[Choice/Opt-Out]]></label>
        <url type="email"><![CDATA[privacy@northernlight.org]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="xxx">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Saint Jude Main Page]]></label>
       <url><![CDATA[https://www.stjude.org/]]></url>
-   </link>
-   <link id="Privacy Policy">
+     </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED (PROVIDED TO OTHERS) AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY.]]></desc>
       <desc><![CDATA[This Notice of Privacy Practices explains how St. Jude Children’s Research Hospital, its medical staff members, employees, volunteers, and clinics may use and provide your Protected Health Information (called PHI) to others for treatment, payment, and health care “operations” as described below, and for other purposes allowed or required by law.]]></desc>
@@ -17,5 +17,5 @@
        <label>withdraw permission for St. Jude to disclose PHI</label>
        <url type="email"><![CDATA[The request should be submitted to Patient Registration, which will then forward this information to the Privacy Officer and the Director of Health Information ManagemenT.]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>

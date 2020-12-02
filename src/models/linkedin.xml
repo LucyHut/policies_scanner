@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <site name="Linkedin">
-   <link id="Main">
+   <main_page>
       <label><![CDATA[Linkedin Main Page]]></label>
       <url><![CDATA[https://www.linkedin.com]]></url>
-   </link>
-   <link id="Privacy Policy">
+    </main_page>
+   <privacy_policy>
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[This Privacy Policy applies when you use our Services (described below). We offer our users choices about the data we collect, use and share as described in this Privacy Policy, Cookie Policy, Settings and our Help Center.]]></desc>
       <url><![CDATA[https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_footer-privacy-policy]]></url>
@@ -16,5 +16,5 @@
        <url type="settings"><![CDATA[https://www.linkedin.com/psettings/guest-controls]]></url>
        <url type="cookies"><![CDATA[https://www.linkedin.com/legal/cookie-policy]]></url>
       </optout>
-  </link>
+  </privacy_policy>
 </site>
