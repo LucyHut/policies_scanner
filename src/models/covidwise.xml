@@ -8,7 +8,7 @@
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[This “Privacy Policy” explains how the Virginia Department of Health (“VDH”) collects, uses, discloses and otherwise processes end users’ data in connection with the COVIDWISE mobile application (“COVIDWISE App”). This Privacy Policy also describes the choices available to individuals with respect to data when using the COVIDWISE App.]]></desc>
       <url><![CDATA[https://www.vdh.virginia.gov/covidwise/privacy-policy/]]></url>
-      <optin type="voluntary">
+      <optin type="required">
          <label><![CDATA[Using the COVIDWISE App is completely voluntary, and you may choose to install and uninstall the COVIDWISE App at any time]]></label>
       </optin>
       <optout>
