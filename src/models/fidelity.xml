@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Fidelity">
+   <main_page>
+      <label><![CDATA[Fidelity Main Page]]></label>
+      <url><![CDATA[https://www.fidelity.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[Fidelity Investments and the Fidelity Funds are committed to maintaining the confidentiality, integrity, and security of personal information about our current and prospective customers. In this policy personal information means information about an individual that is collected or maintained for business purposes and by which the individual can be identified.]]></desc>
+      <url><![CDATA[https://www.fidelity.com/privacy-policy]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout></optout>
+  </privacy_policy>
+</site>

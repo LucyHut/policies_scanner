@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Youtube">
+   <main_page>
+      <label><![CDATA[Youtube Main Page]]></label>
+      <url><![CDATA[https://www.youtube.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy]]></label>
+      <desc><![CDATA[Manage what you share on YouTube. Choose who can see your saved playlists and subscriptions
+Review YouTube terms of service and Google privacy policy]]></desc>
+      <url><![CDATA[https://www.youtube.com/account_privacy?pbjreload=102]]></url>
+      <url><![CDATA[https://policies.google.com/privacy?hl=en]]></url>
+       <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
+      <optout>
+       <label>Privacy Checkup</label>
+       <url type="settings">
+        <![CDATA[https://myaccount.google.com/privacycheckup?utm_source=pp&utm_medium=Promo-in-product&utm_campaign=pp_intro&hl=en]]>
+       </url>
+      </optout>
+  </privacy_policy>
+</site>

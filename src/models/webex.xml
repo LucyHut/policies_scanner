@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Webex">
+   <main_page>
+      <label><![CDATA[Webex Main Page]]></label>
+      <url><![CDATA[https://www.webex.com/]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Cisco Online Privacy Statement]]></label>
+      <desc><![CDATA[This Privacy Statement applies to Cisco websites and Solutions that link to or reference this Privacy Statement and describes how we handle personal information and the choices available to you regarding collection, use, access, and how to update and correct your personal information. Additional information on our personal information practices may be provided in offer descriptions, privacy data sheets, or other notices provided prior to or at the time of data collection. Certain Cisco websites and Solutions may have their own privacy documentation describing how we handle personal information for those websites or Solutions specifically.]]></desc>
+      <url><![CDATA[https://www.cisco.com/c/en/us/about/legal/privacy-full.html]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout>
+       <label><![CDATA[Your Choices and Selecting Your Communication Preferences]]></label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="form"><![CDATA[]]></url>
+       <url type="phone"><![CDATA[SMS Services]]></url>
+      </optout>
+  </privacy_policy>
+</site>

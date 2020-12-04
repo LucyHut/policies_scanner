@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Tiaa">
+   <main_page>
+      <label><![CDATA[Tiaa main page]]></label>
+      <url><![CDATA[https://www.tiaa.org/public/]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Online privacy notice]]></label>
+      <desc><![CDATA[Please read this notice carefully.  It applies to you as a current or former customer of our products and services, or as a consumer interested in our products and services.  We at TIAA are committed to protecting your privacy in accordance with the Fair Credit Reporting Act (FCRA), as amended by the Fair and Accurate Credit Transactions Act of 2003 (FACT Act), the Gramm-Leach-Bliley Financial Services Modernization Act (GLB), applicable state laws and this privacy notice.]]></desc>
+      <url><![CDATA[https://www.tiaa.org/public/support/privacy/privacy-notice]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout>
+       <label>Your right to opt out</label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="phone"><![CDATA[To opt out of either information sharing or marketing, or both]]></url>
+      </optout>
+  </privacy_policy>
+</site>

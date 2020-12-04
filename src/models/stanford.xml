@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Stanford">
+   <main_page>
+      <label><![CDATA[Stanford Main Page]]></label>
+      <url><![CDATA[https://www.stanford.edu]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Online Privacy Policy]]></label>
+      <desc><![CDATA[This Online Privacy Notice applies to the information that we collect when you visit Stanford University’s main website (www.stanford.edu) and other websites that we own or control and link or refer to this Privacy Notice (together, the “Sites”). This Notice describes how this information is processed, as well as the choices that are available to you regarding the use of the information you provide.]]></desc>
+      <url><![CDATA[https://www.stanford.edu/site/privacy/#cookie-policy]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout>
+       <label>Cookies</label>
+       <url type="cookies"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

@@ -18,7 +18,7 @@
       </optin>      
       <optout>
        <label>Privacy Checkup</label>
-       <url type="link">
+       <url type="settings">
         <![CDATA[https://myaccount.google.com/privacycheckup?utm_source=pp&utm_medium=Promo-in-product&utm_campaign=pp_intro&hl=en]]>
        </url>
       </optout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Vanguard">
+   <main_page>
+      <label><![CDATA[Vanguard Main Page]]></label>
+      <url><![CDATA[https://retirementplans.vanguard.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Vanguard's Privacy Center]]></label>
+      <desc><![CDATA[We're committed to maintaining the privacy and security of your personal information.]]></desc>
+      <url><![CDATA[https://investor.vanguard.com/privacy-center/home-page]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>California Do Not Sell My Personal Information</label>
+       <url type="form"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

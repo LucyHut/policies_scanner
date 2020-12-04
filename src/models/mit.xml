@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="MIT">
+   <main_page>
+      <label><![CDATA[MIT Main Page]]></label>
+      <url><![CDATA[https://web.mit.edu]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Statement]]></label>
+      <desc><![CDATA[In addition to the main MIT website, MIT departments, labs, centers, and individuals publish many other websites and pages outside the scope of this privacy statement, which may post and adhere to their own privacy statements. Visitors are encouraged to review posted privacy statements for each MIT website they visit.]]></desc>
+      <url><![CDATA[https://web.mit.edu/privacy/]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout>
+       <label>Cookies</label>
+       <url type="settings"><![CDATA[Google Analytics Opt-out Browser Add-on]]></url>
+      </optout>
+  </privacy_policy>
+</site>

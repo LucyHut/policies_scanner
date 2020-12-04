@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Wikipedia">
+   <main_page>
+      <label><![CDATA[Wikipedia Main Page]]></label>
+      <url><![CDATA[https://www.wikipedia.org/]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[This summary is not a part of the Privacy Policy and is not a legal document. It is simply a handy reference for understanding the full Privacy Policy. Think of it as the user-friendly interface to our Privacy Policy.]]></desc>
+      <url><![CDATA[https://meta.wikimedia.org/wiki/Privacy_policy]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout></optout>
+  </privacy_policy>
+</site>

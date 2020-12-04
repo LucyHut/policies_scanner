@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="citibank">
+   <main_page>
+      <label><![CDATA[Citi Bank]]></label>
+      <url><![CDATA[https://www.citi.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[U.S. Privacy Notice for Consumers]]></label>
+      <desc><![CDATA[This Notice explains how we collect, share, use, and protect information when you visit or use the Sites/Services. We advise you to read the Notice in its entirety, including the jurisdiction-specific provisions in the appendix to this Notice, which will apply to users in certain jurisdictions. By using the Sites/Services, you agree to this Privacy Notice.]]></desc>
+      <url><![CDATA[https://online.citi.com/US/JRS/portal/template.do?ID=Privacy]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>YOUR CHOICES REGARDING YOUR PERSONAL INFORMATION</label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="form"><![CDATA[the DAA website]]></url>
+       <url type="phone"><![CDATA[]]></url>
+       <url type="settings"><![CDATA[Do Not Track - browser settings]]></url>
+      </optout>
+  </privacy_policy>
+</site>

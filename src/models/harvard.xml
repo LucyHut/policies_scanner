@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="Harvard">
+   <main_page>
+      <label><![CDATA[Harvard Main Site]]></label>
+      <url><![CDATA[https://www.harvard.edu/]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Statement]]></label>
+      <desc><![CDATA[This Privacy Policy discloses the privacy practices for www.harvard.edu, the main Harvard University website. Please note that Harvard Schools, Centers, and other Harvard units and affiliates have separate privacy policies. By using this website, you are consenting to our collection and use of information in accordance with this Privacy Policy.]]></desc>
+      <url><![CDATA[https://www.harvard.edu/privacy-statement]]></url>
+      <optin type="default">
+         <label><![CDATA[None]]></label>
+      </optin>
+      <optout>
+       <label>Cookies</label>
+       <url type="cookies"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

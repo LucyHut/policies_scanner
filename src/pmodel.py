@@ -22,11 +22,16 @@ class PPolicy:
     def set_policy(self, xml_model):
         if xml_model is not None:
             try:
-                self.policy["policy_title"]=xml_model.find("./label").text
-                self.policy["desc"]=xml_model.find("./desc").text
-                self.policy["policy_url"]=xml_model.find("./url").text
-                self.policy["optins"]=self.get_optins(xml_model.findall("./optin"))
-                self.policy["optouts"]=self.get_optouts(xml_model.findall("./optout"))
+                if xml_model.find("./label") is not None:
+                    self.policy["policy_title"]=xml_model.find("./label").text
+                if xml_model.find("./desc") is not None:
+                    self.policy["desc"]=xml_model.find("./desc").text
+                if xml_model.find("./url") is not None: 
+                    self.policy["policy_url"]=xml_model.find("./url").text
+                if xml_model.findall("./optin") is not None:
+                    self.policy["optins"]=self.get_optins(xml_model.findall("./optin"))
+                if xml_model.findall("./optout") is not None:
+                    self.policy["optouts"]=self.get_optouts(xml_model.findall("./optout"))
             except: raise
     '''
      A given controller may implement more than one
@@ -48,11 +53,12 @@ class PPolicy:
         moptouts=[]
         if xml_optouts is not None:
             for optout in xml_optouts:
-                label=optout.find("label").text
-                urls=[]
-                for option in optout.findall("./url"):
-                    urls.append({"type":option.attrib["type"],"desc":option.text})
-                moptouts.append({"title":label,"options":urls})
+                if optout:
+                    label=optout.find("label").text
+                    urls=[]
+                    for option in optout.findall("./url"):
+                        urls.append({"type":option.attrib["type"],"desc":option.text})
+                    moptouts.append({"title":label,"options":urls})
         return moptouts
 '''
 Args:
@@ -124,6 +130,7 @@ class Models:
     def loadModels(self, model_dir):
         mlist=self.getModelsList(model_dir)
         if isinstance(mlist, list):
+            self.models_list=[]
             for model_file in mlist:
                 if "template" in model_file: continue
                 xml_file=join(model_dir,model_file)
@@ -137,10 +144,60 @@ class Models:
         return file_list
 
     '''
-    To Do
-
-    More  members will be added  here for the analysis
+    Returns Optins choices tally
     '''
+    def getOpins_tally(self):
+        optins={}
+        if isinstance(self.models_list,list):
+            for site in self.models_list:
+                if isinstance(site.model,dict):
+                    try:
+                        for policy in site.model['ppolicies']:
+                            for optin in policy["optins"]:
+                                otype=optin["type"]
+                                if optin["type"] not in optins: optins[otype]=1
+                                else: optins[otype]+=1
+                    except:raise
+        return optins
+
+    '''
+    Returns Optout choice  types tally
+    '''
+    def getOptouts_tally(self):
+        options={}
+        if isinstance(self.models_list,list):
+            for site in self.models_list:
+                if isinstance(site.model,dict):
+                    try:
+                        for policy in site.model['ppolicies']:
+                            for optout in policy["optouts"]:
+                                if isinstance(optout,dict):
+                                    for option in optout["options"]:
+                                        otype=option["type"]
+                                        if option["type"] not in options: options[otype]=1
+                                        else: options[otype]+=1
+                    except:raise
+        return options
+
+    '''
+    Returns Optout options count distribution
+    '''
+    def getOptouts_options_dist(self):
+        options={}
+        if isinstance(self.models_list,list):
+            for site in self.models_list:
+                if isinstance(site.model,dict):
+                    try:
+                        for policy in site.model['ppolicies']:
+                            for optout in policy["optouts"]:
+                                if isinstance(optout,dict):
+                                    otype=len(optout["options"])
+                                    if otype not in options: options[otype]=1
+                                    else: options[otype]+=1
+                    except:raise
+        return options
+
+           
 if __name__== "__main__":
     models_dir=join(dirname(realpath(__file__)),"models")
     if isdir(models_dir):
@@ -149,6 +206,9 @@ if __name__== "__main__":
             print("**********************************************************")
             print("**********************************************************")
             print(model.model)
-       ## print("Current directory is: %s"%(models_dir))
+        print("Total models: %d"%(len(models.models_list)))
+        print(models.getOpins_tally())
+        print(models.getOptouts_tally())
+        print(models.getOptouts_options_dist())
     else:
         print("ERROR: missing models directory - see %s"%(models_dir))

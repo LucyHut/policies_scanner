@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="UMaine">
+   <main_page>
+      <label><![CDATA[UMaine Main Site]]></label>
+      <url><![CDATA[https://umaine.edu]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[Visitors to the maine.edu website are important to us. Maine.edu does not record personal information about you without your permission. Maine.edu collects only the information needed to create an efficient electronic gateway for public information.]]></desc>
+      <url><![CDATA[https://www.maine.edu/privacy-policy/]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout></optout>
+  </privacy_policy>
+</site>

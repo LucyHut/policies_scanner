@@ -8,6 +8,9 @@
       <label><![CDATA[Privacy Policy]]></label>
       <desc><![CDATA[Northern Light Health, its member organizations, and strategic affiliates have created the online security and privacy policy in order to implement our firm commitment to protecting the integrity of confidential information, and the manner in which this information is used. The following discloses our information gathering and dissemination practices for this website for the organizations.]]></desc>
       <url><![CDATA[https://northernlighthealth.org/Legal/Privacy-Statement]]></url>
+      <optin type="default">
+         <label><![CDATA[none]]></label>
+      </optin>
       <optout>
        <label><![CDATA[Choice/Opt-Out]]></label>
        <url type="email"><![CDATA[privacy@northernlight.org]]></url>
