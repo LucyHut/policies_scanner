@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="walmart">
+   <main_page>
+      <label><![CDATA[walmart]]></label>
+      <url><![CDATA[https://www.walmart.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Walmart Privacy Policy]]></label>
+      <desc><![CDATA[The information you share with Walmart allows us to provide the products and services you need and want while giving you the very best shopping experience.]]></desc>
+      <url><![CDATA[https://corporate.walmart.com/privacy-security/walmart-privacy-policy]]></url>
+      <optin type="required">
+         <label><![CDATA[opt-in standard for automated phone and text messages, and for sharing personal information with companies outside our corporate family of companies for their use in direct marketing of their products, such as sending you promotions for their products.]]></label>
+      </optin>
+      <optout>
+       <label><![CDATA[What are Your Choices?]]></label>
+       <url type="settings"><![CDATA[]]></url>
+       <url type="email"><![CDATA[]]></url>
+       <url type="phone"><![CDATA[]]></url>
+       <url type="form"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

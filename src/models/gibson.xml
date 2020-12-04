@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="gibson">
+   <main_page>
+      <label><![CDATA[Gibson]]></label>
+      <url><![CDATA[https://www.gibson.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Gibson Brands, Inc. Privacy Policy]]></label>
+      <desc><![CDATA[Gibson Brands, Inc. takes your privacy very seriously. For that reason, we have developed this policy to let you know about our collection, use, and disclosure of your Personal Data and the choices you have associated with that data. This Privacy Policy applies to all of the Gibson Brands, Inc. divisions and subsidiaries and related websites. Personal Data may be shared without further notice between all Gibson Brands, Inc. divisions and subsidiaries.]]></desc>
+      <url><![CDATA[https://www.gibson.com/Privacy-Policy]]></url>
+      <optin type="">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>Service Providers</label>
+       <url type="settings"><![CDATA[Google Analytics opt-out browser add-on]]></url>
+      </optout>
+  </privacy_policy>
+</site>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="macys">
+   <main_page>
+      <label><![CDATA[Macys Main Page]]></label>
+      <url><![CDATA[https://www.macys.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Macy’s and macys.com Notice of Privacy Practices]]></label>
+      <desc><![CDATA[This statement applies to "Personal Information" collected, processed or stored by Macy's, a Macy's Inc. company. Personal information may be shared between or processed for retailing purposes by any Macy's Inc. entity, operating under the brand names Macy's or Bloomingdale's (hereinafter "Family of Businesses"). This Notice describes the extent of collection and usage for these Macy's, Inc. "Family of Businesses" and services; however, not all entities participate in all uses and collection described in this document.]]></desc>
+      <url><![CDATA[https://www.customerservice-macys.com/app/answers/detail/a_id/595#Cookies]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>Data Sharing Preferences</label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="mail"><![CDATA[By mail at Macy's Credit and Customer Services]]></url>
+       <url type="phone"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

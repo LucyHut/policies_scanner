@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="robinhood">
+   <main_page>
+      <label><![CDATA[Robinhood]]></label>
+      <url><![CDATA[https://robinhood.com/us/en/]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Robinhood United States Privacy Policy]]></label>
+      <desc><![CDATA[At Robinhood, we take privacy and security seriously. This United States Privacy Policy outlines how Robinhood Financial LLC and its affiliates (collectively, the “Company,” “Robinhood,” “we,” “our,” or “us”) process the information we collect about you through our websites, mobile apps, and other online services (collectively, the “Services”) and when you otherwise interact with us, such as through our customer service channels.]]></desc>
+      <url><![CDATA[https://cdn.robinhood.com/assets/robinhood/legal/RHF%20Privacy.pdf]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>Affiliate Sharing Opt Out</label>
+       <url type="email"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="costco">
+   <main_page>
+      <label><![CDATA[Costco]]></label>
+      <url><![CDATA[https://www.costco.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Costco Wholesale Corporation Your Privacy Rights]]></label>
+      <desc><![CDATA[This Privacy Policy explains how we collect, use and disclose personal information about you. This Privacy Policy applies to Costco Wholesale Corporation’s United States (US) and Puerto Rico subsidiaries ("Costco," "we," “our” or "us").]]></desc>
+      <url><![CDATA[https://www.costco.com/privacy-policy.html]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>Your Choices</label>
+       <url type="settings"><![CDATA[Online settings]]></url>
+       <url type="phone"><![CDATA[]]></url>
+       <url type="mail"><![CDATA[]]></url>
+       <url type="chat"><![CDATA[using the chat feature on costco.com]]></url>
+      </optout>
+  </privacy_policy>
+</site>

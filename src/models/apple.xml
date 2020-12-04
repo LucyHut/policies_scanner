@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="apple">
+   <main_page>
+      <label><![CDATA[apple]]></label>
+      <url><![CDATA[https://www.apple.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Apple Customer Privacy Policy]]></label>
+      <desc><![CDATA[Apple is committed to your privacy. Read our customer Privacy Policy for a clear explanation of how we collect, use, disclose, transfer, and store your information.]]></desc>
+      <url><![CDATA[https://www.apple.com/legal/privacy/en-ww/]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label>Your Privacy Rights</label>
+       <url type="settings"><![CDATA[]]></url>
+       <url type="form"><![CDATA[]]></url>
+       <url type="phone"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="turbotax">
+   <main_page>
+      <label><![CDATA[Intuit]]></label>
+      <url><![CDATA[https://www.intuit.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy and Security]]></label>
+      <desc><![CDATA[We're committed to keeping your data safe]]></desc>
+      <url><![CDATA[https://www.intuit.com/privacy/]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout></optout>
+  </privacy_policy>
+</site>

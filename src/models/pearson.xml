@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="pearson">
+   <main_page>
+      <label><![CDATA[Pearson]]></label>
+      <url><![CDATA[https://www.pearsonmylabandmastering.com/northamerica/index.html]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[Pearson Education, Inc. presents this site to provide information about Pearson products and services. It serves as a front door to many of our products and services offered in the United States and allows you to connect with us in a variety of ways.]]></desc>
+      <url><![CDATA[https://www.pearson.com/en-us/legal-information/privacy-policy.html]]></url>
+      <optin type="required">
+         <label><![CDATA[cookies opt-in]]></label>
+      </optin>
+      <optout>
+       <label>Cookies and Related Technologies</label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="settings"><![CDATA[Do Not Track - browser settings]]></url>
+      </optout>
+  </privacy_policy>
+</site>

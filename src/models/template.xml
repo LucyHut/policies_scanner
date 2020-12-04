@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label></label>
-       <url type="settings|cookies|email|form|phone"><![CDATA[]]></url>
+       <url type="mail|chat|settings|cookies|email|form|phone"><![CDATA[]]></url>
       </optout>
   </privacy_policy>
 </site>

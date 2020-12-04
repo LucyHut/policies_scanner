@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="irs">
+   <main_page>
+      <label><![CDATA[IRS]]></label>
+      <url><![CDATA[https://www.irs.gov]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[IRS Privacy Policy]]></label>
+      <desc><![CDATA[Our privacy policy explains how we handle the personally identifiable information (PII) that you provide to us when you visit us online to browse, obtain information, or conduct a transaction. PII includes information that is personal in nature and which might be used to identify you.]]></desc>
+      <url><![CDATA[https://www.irs.gov/privacy-disclosure/irs-privacy-policy]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout></optout>
+  </privacy_policy>
+</site>

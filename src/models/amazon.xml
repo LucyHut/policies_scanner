@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site name="amazon">
+   <main_page>
+      <label><![CDATA[amazon]]></label>
+      <url><![CDATA[https://www.amazon.com]]></url>
+  </main_page>
+  <privacy_policy>
+      <label><![CDATA[Privacy Policy]]></label>
+      <desc><![CDATA[]]></desc>
+      <url><![CDATA[https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496&ref_=footer_privacy]]></url>
+      <optin type="default">
+         <label><![CDATA[]]></label>
+      </optin>
+      <optout>
+       <label><![CDATA[What Choices Do I Have?]]></label>
+       <url type="cookies"><![CDATA[]]></url>
+       <url type="settings"><![CDATA[]]></url>
+      </optout>
+  </privacy_policy>
+</site>
