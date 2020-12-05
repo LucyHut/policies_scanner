@@ -19,7 +19,8 @@ if they want to use an application or service provided by that website.
 - [Privacy Policy Extractor ](#privacy-policy-extractor)
 - [Directory Structure](#directory-structure)
 - [Training Models](#training-models)
-- [How it works](#how-it-works)
+- [Model sample](#model-sample)
+- [How does policy_scanner work](#how-does-policy_scanner-work)
 - [Tool and Software Requirements](#tool-and-software-requirements)
 
 ### Privacy Policy Extractor
@@ -95,7 +96,7 @@ python pmodel.py
 ```
 
 
-### How does policy_scanner works
+### How does policy_scanner work
 
 ```
 Usage: PROG [-h] --curl=main_page_url [--purl=policy_page_url]
@@ -142,7 +143,7 @@ Usage examples :
  8) The tool must detect the toll-free phone number wihtin an Opt-out/Opt-in section where available
  9) The tool must detect links within an Opt-out/Opt-in section where available
  ```
- ### Software Requirements
+ #### Software Requirements
  ```
  Python3 is used and all the dependencies have been installed 
  
@@ -154,8 +155,7 @@ Usage examples :
 ```
 
 ### Useful resources
+
 * Extraction of Opt-Out Choices from Privacy Policies using BERT
-
-** https://canvas.eee.uci.edu/courses/14385/files/5940142/download?wrap=1
-
-** https://github.com/google-research/bert
+* https://canvas.eee.uci.edu/courses/14385/files/5940142/download?wrap=1
+* https://github.com/google-research/bert
