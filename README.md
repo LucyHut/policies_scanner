@@ -90,8 +90,9 @@ The lack of structure and standards from Privacy Policy documents makes it hard 
 
 This module implements  python classes used to load xml models into objects with the actions on these models.
 You can browse these models by running the following command on the commandline:
-
+```
 python pmodel.py
+```
 
 
 ### How does policy_scanner works
