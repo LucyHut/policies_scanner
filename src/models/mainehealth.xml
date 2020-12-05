@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Opting Out of Health Information Exchanges</label>
-       <url type="form"><![CDATA[Fill a form]]></url>
-       <url type="phone"><![CDATA[Toll free number]]></url>
+       <option type="form"><![CDATA[Fill a form]]></option>
+       <option type="phone"><![CDATA[Toll free number]]></option>
       </optout>
   </privacy_policy>
 </site>

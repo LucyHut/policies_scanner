@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>How to opt out or disable cookies</label>
-       <url type="cookies"><![CDATA[Cookies setting]]></url>
+       <option type="cookies"><![CDATA[Cookies setting]]></option>
       </optout>
   </privacy_policy>
 </site>

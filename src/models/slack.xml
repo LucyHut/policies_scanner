@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Your Rights</label>
-       <url type="settings"><![CDATA[https://slack.com/account/settings]]></url>
-       <url type="cookies"><![CDATA[https://slack.com/trust/compliance/cookie-policy]]></url>
+       <option type="settings"><![CDATA[https://slack.com/account/settings]]></option>
+       <option type="cookies"><![CDATA[https://slack.com/trust/compliance/cookie-policy]]></option>
       </optout>
   </privacy_policy>
 </site>

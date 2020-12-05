@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Privacy</label>
-         <url type="settings"><![CDATA[see facebook]]></url>
-         <url type="cookies"><![CDATA[see facebook]]></url>
+         <option type="settings"><![CDATA[see facebook]]></option>
+         <option type="cookies"><![CDATA[see facebook]]></option>
       </optout>
   </privacy_policy>
 </site>

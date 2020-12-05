@@ -13,10 +13,10 @@
       </optin>
       <optout>
        <label>Your Choices</label>
-       <url type="settings"><![CDATA[Online settings]]></url>
-       <url type="phone"><![CDATA[]]></url>
-       <url type="mail"><![CDATA[]]></url>
-       <url type="chat"><![CDATA[using the chat feature on costco.com]]></url>
+       <option type="settings"><![CDATA[Online settings]]></option>
+       <option type="phone"><![CDATA[]]></option>
+       <option type="mail"><![CDATA[]]></option>
+       <option type="chat"><![CDATA[using the chat feature on costco.com]]></option>
       </optout>
   </privacy_policy>
 </site>

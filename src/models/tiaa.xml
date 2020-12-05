@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Your right to opt out</label>
-       <url type="cookies"><![CDATA[]]></url>
-       <url type="phone"><![CDATA[To opt out of either information sharing or marketing, or both]]></url>
+       <option type="cookies"><![CDATA[]]></option>
+       <option type="phone"><![CDATA[To opt out of either information sharing or marketing, or both]]></option>
       </optout>
   </privacy_policy>
 </site>

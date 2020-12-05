@@ -13,10 +13,10 @@
       </optin>
       <optout>
        <label>YOUR CHOICES REGARDING YOUR PERSONAL INFORMATION</label>
-       <url type="cookies"><![CDATA[]]></url>
-       <url type="form"><![CDATA[the DAA website]]></url>
-       <url type="phone"><![CDATA[]]></url>
-       <url type="settings"><![CDATA[Do Not Track - browser settings]]></url>
+       <option type="cookies"><![CDATA[]]></option>
+       <option type="form"><![CDATA[the DAA website]]></option>
+       <option type="phone"><![CDATA[]]></option>
+       <option type="settings"><![CDATA[Do Not Track - browser settings]]></option>
       </optout>
   </privacy_policy>
 </site>

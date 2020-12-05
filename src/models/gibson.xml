@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>Service Providers</label>
-       <url type="settings"><![CDATA[Google Analytics opt-out browser add-on]]></url>
+       <option type="settings"><![CDATA[Google Analytics opt-out browser add-on]]></option>
       </optout>
   </privacy_policy>
 </site>

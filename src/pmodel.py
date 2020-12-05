@@ -13,7 +13,14 @@ from os import listdir
 from os.path import join, isfile,isdir,dirname, realpath
 import xml.etree.ElementTree as ET
 
+'''
+A policy is an object with the following members:
+  -- a title
+  -- a brief summary
+  -- list of optins
+  -- a list of opt-outs
 
+'''
 class PPolicy:
     def __init__(self,xml_model):
         self.policy={}
@@ -33,6 +40,7 @@ class PPolicy:
                 if xml_model.findall("./optout") is not None:
                     self.policy["optouts"]=self.get_optouts(xml_model.findall("./optout"))
             except: raise
+
     '''
      A given controller may implement more than one
      optin type, we will store optins into an array.
@@ -47,7 +55,7 @@ class PPolicy:
     '''
      A given controller may implement more than one
      optout type, we will store optouts into an array.
-     For example: outout from data sharing, outout from cookies, ...
+     For example: optout from data sharing, optout from cookies, ...
     '''
     def get_optouts(self, xml_optouts):
         moptouts=[]
@@ -55,10 +63,10 @@ class PPolicy:
             for optout in xml_optouts:
                 if optout:
                     label=optout.find("label").text
-                    urls=[]
-                    for option in optout.findall("./url"):
-                        urls.append({"type":option.attrib["type"],"desc":option.text})
-                    moptouts.append({"title":label,"options":urls})
+                    options=[]
+                    for option in optout.findall("./option"):
+                        options.append({"type":option.attrib["type"],"desc":option.text})
+                    moptouts.append({"title":label,"options":options})
         return moptouts
 '''
 Args:

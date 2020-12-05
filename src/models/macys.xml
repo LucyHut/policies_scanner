@@ -13,9 +13,9 @@
       </optin>
       <optout>
        <label>Data Sharing Preferences</label>
-       <url type="cookies"><![CDATA[]]></url>
-       <url type="mail"><![CDATA[By mail at Macy's Credit and Customer Services]]></url>
-       <url type="phone"><![CDATA[]]></url>
+       <option type="cookies"><![CDATA[]]></option>
+       <option type="mail"><![CDATA[By mail at Macy's Credit and Customer Services]]></option>
+       <option type="phone"><![CDATA[]]></option>
       </optout>
   </privacy_policy>
 </site>

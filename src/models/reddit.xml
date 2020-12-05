@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Your Choices</label>
-       <url type="settings"><![CDATA[https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fsettings]]></url>
-       <url type="cookies"><![CDATA[https://www.redditinc.com/policies/cookies]]></url>
+       <option type="settings"><![CDATA[https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fsettings]]></option>
+       <option type="cookies"><![CDATA[https://www.redditinc.com/policies/cookies]]></option>
       </optout>
   </privacy_policy>
 </site>

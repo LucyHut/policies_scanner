@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>settings</label>
-       <url type="settings"><![CDATA[https://twitter.com/settings/account]]></url>
-       <url type="cookies"><![CDATA[https://help.twitter.com/en/rules-and-policies/twitter-cookies]]></url>
+       <option type="settings"><![CDATA[https://twitter.com/settings/account]]></option>
+       <option type="cookies"><![CDATA[https://help.twitter.com/en/rules-and-policies/twitter-cookies]]></option>
       </optout>
   </privacy_policy>
 </site>

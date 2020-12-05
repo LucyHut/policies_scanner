@@ -13,9 +13,9 @@
       </optin>
       <optout>
        <label><![CDATA[Your Choices and Selecting Your Communication Preferences]]></label>
-       <url type="cookies"><![CDATA[]]></url>
-       <url type="form"><![CDATA[]]></url>
-       <url type="phone"><![CDATA[SMS Services]]></url>
+       <option type="cookies"><![CDATA[]]></option>
+       <option type="form"><![CDATA[]]></option>
+       <option type="phone"><![CDATA[SMS Services]]></option>
       </optout>
   </privacy_policy>
 </site>

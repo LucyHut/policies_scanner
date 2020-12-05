@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>How to Opt Out or Disable Cookies</label>
-       <url type="cookies"><![CDATA[https://www.usa.gov/optout-instructions]]></url>
+       <option type="cookies"><![CDATA[https://www.usa.gov/optout-instructions]]></option>
       </optout>
   </privacy_policy>
 </site>

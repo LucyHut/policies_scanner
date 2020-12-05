@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>Cookies</label>
-       <url type="settings"><![CDATA[Google Analytics Opt-out Browser Add-on]]></url>
+       <option type="settings"><![CDATA[Google Analytics Opt-out Browser Add-on]]></option>
       </optout>
   </privacy_policy>
 </site>

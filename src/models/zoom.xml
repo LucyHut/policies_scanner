@@ -14,9 +14,9 @@
       </optin>
       <optout>
        <label>Privacy</label>
-       <url type="settings"><![CDATA[]]></url>
-       <url type="email"><![CDATA[]]></url>
-       <url type="cookies"><![CDATA[]]></url>
+       <option type="settings"><![CDATA[]]></option>
+       <option type="email"><![CDATA[]]></option>
+       <option type="cookies"><![CDATA[]]></option>
       </optout>
   </privacy_policy>
 </site>

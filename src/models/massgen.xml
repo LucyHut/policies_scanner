@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>Cookies, Tracking and Internet-based Advertising</label>
-       <url type="cookies"><![CDATA[Internet browsers]]></url>
+       <option type="cookies"><![CDATA[Internet browsers]]></option>
       </optout>
   </privacy_policy>
 </site>

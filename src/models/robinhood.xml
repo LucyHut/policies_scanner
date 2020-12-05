@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>Affiliate Sharing Opt Out</label>
-       <url type="email"><![CDATA[]]></url>
+       <option type="email"><![CDATA[]]></option>
       </optout>
   </privacy_policy>
 </site>

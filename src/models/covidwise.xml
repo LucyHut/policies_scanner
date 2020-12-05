@@ -13,7 +13,7 @@
       </optin>
       <optout>
        <label>OPTING OUT OF PUSH NOTIFICATIONS</label>
-       <url type="settings"><![CDATA[You can deactivate push notifications and alerts at any time by deleting the COVIDWISE App, changing your device settings, or changing the push notification settings within the COVIDWISE App.]]></url>
+       <option type="settings"><![CDATA[You can deactivate push notifications and alerts at any time by deleting the COVIDWISE App, changing your device settings, or changing the push notification settings within the COVIDWISE App.]]></option>
       </optout>
   </privacy_policy>
 </site>

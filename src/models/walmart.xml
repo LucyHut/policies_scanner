@@ -13,10 +13,10 @@
       </optin>
       <optout>
        <label><![CDATA[What are Your Choices?]]></label>
-       <url type="settings"><![CDATA[]]></url>
-       <url type="email"><![CDATA[]]></url>
-       <url type="phone"><![CDATA[]]></url>
-       <url type="form"><![CDATA[]]></url>
+       <option type="settings"><![CDATA[]]></option>
+       <option type="email"><![CDATA[]]></option>
+       <option type="phone"><![CDATA[]]></option>
+       <option type="form"><![CDATA[]]></option>
       </optout>
   </privacy_policy>
 </site>

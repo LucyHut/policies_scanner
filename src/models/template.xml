@@ -10,8 +10,9 @@
       <url><![CDATA[]]></url>
       <optin type="">
          <label><![CDATA[]]></label>
+         <option type="mail|chat|settings|cookies|email|form|phone"><![CDATA[]]></option>
       </optin>
-      <optout>
+      <optout type="">
        <label></label>
        <option type="mail|chat|settings|cookies|email|form|phone"><![CDATA[]]></option>
       </optout>

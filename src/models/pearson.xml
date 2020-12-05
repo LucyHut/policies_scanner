@@ -13,8 +13,8 @@
       </optin>
       <optout>
        <label>Cookies and Related Technologies</label>
-       <url type="cookies"><![CDATA[]]></url>
-       <url type="settings"><![CDATA[Do Not Track - browser settings]]></url>
+       <option type="cookies"><![CDATA[]]></option>
+       <option type="settings"><![CDATA[Do Not Track - browser settings]]></option>
       </optout>
   </privacy_policy>
 </site>

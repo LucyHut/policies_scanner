@@ -15,7 +15,7 @@
       </optin>
       <optout>
        <label>withdraw permission for St. Jude to disclose PHI</label>
-       <url type="email"><![CDATA[The request should be submitted to Patient Registration, which will then forward this information to the Privacy Officer and the Director of Health Information ManagemenT.]]></url>
+       <option type="email"><![CDATA[The request should be submitted to Patient Registration, which will then forward this information to the Privacy Officer and the Director of Health Information ManagemenT.]]></option>
       </optout>
   </privacy_policy>
 </site>
