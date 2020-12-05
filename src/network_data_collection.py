@@ -5,7 +5,8 @@ import re
 import pickle
 
 
-# This function draws from the links.txt file for URLs.
+# This function draws from the links.txt file for URLs, and extracts the link to the privacy policies,
+#   as well as the policies themselves from these links.
 def collect_and_save_data():
     driver = webdriver.Chrome()
 
@@ -34,18 +35,20 @@ def collect_and_save_data():
 
     save_array_to_file(policy_data, "policy_data.p")
 
-    # Possible string collection commands
-    # policyObject.extracted_policy.find_all('p')
-
+# This is a list of words that have been identified to appear commonly in opt-in and opt-out statements.
+# This is used to filter out strings that are unlikely to contain privacy option statements.
 opt_identifiers = ['you may', 'setting', 'you can', 'deactivate', 'revoke', 'chang', 'opt out', 'opt in',
                    'opt-out', 'opt-in', 'how to', 'update', 'manage', 'choice', 'opting', 'consent', 'disable',
                    'withdraw', 'permission', 'sign a', 'signed', 'rights', 'right', 'cookie', 'unsubscribe']
 
+
+# This script allows a user to tag individual HTML tags from privacy policies for use in training the neural network.
+# It also allows them to save this data to a serialized file.
 def tag_trainning_data():
     data = get_array_from_file("policy_data.p")
     for policy in data:
         for paragraph in policy['policy_text']:
-            if policy['trained_key'][policy['policy_text'].index(paragraph)] == None:
+            if policy['trained_key'][policy['policy_text'].index(paragraph)] is None:
                 flag = False
                 for identifier in opt_identifiers:
                     if identifier in paragraph:
@@ -69,7 +72,8 @@ def tag_trainning_data():
     return 1
 
 
-# Class for storing policy information
+# Class for storing policy information. Contains methods that extract policy information as well,
+#   such as the links to the policies, and the policies themselves.
 class Policy:
     def __init__(self, website_url, selenium_driver, policy_url=None, extracted_policy=None):
         self.driver = selenium_driver           # Selenium driver for extracting information.
@@ -117,6 +121,7 @@ class Policy:
         return soup
 
 
+# These functions are for saving values to and getting values from serialized files.
 def save_array_to_file(array, filename):
     pickle.dump(array, open(filename, "wb"))
 

@@ -7,3 +7,6 @@ src/sentiment_analysis/readme.txt
 src/sentiment_analysis/yelp_labelled.txt
 src/sklearn_testing.py
 src/sentiment_analysis/yelp_labelled.txt
+src/glove.6B.50d.txt
+src/policy_data_saved_1.p
+src/policy_data.p

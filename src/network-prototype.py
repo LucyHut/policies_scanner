@@ -7,7 +7,12 @@ from keras import layers
 import numpy as np
 import pickle
 
-maxlen = 100
+# This code borrows heavily from the examples provided by Nikolai Janakiev, in their article availiable at:
+# https://realpython.com/python-keras-text-classification/#what-is-a-word-embedding
+# This code requires the Word2Vec file glove.6B50d file to be in the active directory.
+# This code is not in its testing phase yet, so your mileage may vary while using it.
+
+maxlen = 100                                    # Maximum length of a section of text
 
 policy_data_file = pickle.load(open("policy_data.p", "rb"))
 sentences = []
@@ -18,11 +23,11 @@ for policy in policy_data_file:
             sentences.append(paragraph)
             labels.append(1 if policy['trained_key'][policy['policy_text'].index(paragraph)] == 'y' else 0)
 sentences = np.array(sentences)
-labels = np.array(labels)
+labels = np.array(labels)                       # (below) Separate the training data from the testing data.
 sentences_train, sentences_test, y_train, y_test = train_test_split(sentences, labels, test_size=0.25, random_state=1000)
 
 
-tokenizer = Tokenizer(num_words=5000)
+tokenizer = Tokenizer(num_words=5000)           # Tokenize the data.
 tokenizer.fit_on_texts(sentences_train)
 
 X_train = tokenizer.texts_to_sequences(sentences_train)
@@ -54,7 +59,7 @@ embedding_matrix = create_embedding_matrix('glove.6B.50d.txt',tokenizer.word_ind
 
 nonzero_elements = np.count_nonzero(np.count_nonzero(embedding_matrix, axis=1))
 print("Fraction of corpus covered by preloaded vocab %s" % (nonzero_elements / vocab_size, ))
-
+# (above) Report the fraction of the corpus found in the glove data
 model = Sequential()
 model.add(layers.Embedding(vocab_size, embedding_dim, input_length=maxlen))
 model.add(layers.Conv1D(128, 5, activation='relu'))
@@ -76,6 +81,7 @@ print("Training Accuracy: {:.4f}".format(accuracy))
 loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
 print("Testing Accuracy:  {:.4f}".format(accuracy))
 
+# Print some of the more likely values
 val = np.ndarray.tolist(model.predict(X_test))
 for prediction in val:
     if prediction[0] > 0.5:
