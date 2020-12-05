@@ -27,15 +27,20 @@ if they want to use an application or service provided by that website.
 ```
 A Python program that extracts the Opt-in and Opt-out sections from a given Privacy Policy html document.
 A sample of 40 policies of controllers ranging from healthcare to education is used as a training model.
-
+Each controller is an xml model that contains one "main_page" node and one or more "privacy_policy" nodes.
+There is a python module "pmodel.py" that is an interface to the xml models. 
 ```
+
+Details about these models are provided under the [Training Models](#training-models) section.
+
+
 ### Directory Structure
 
-There is a src sub-directory and under that directory we have: 
+There is a src sub-directory and under root directory. Under the src/ directory, we have: 
 
 * a subdirectory called models that contains model xml files,
 * pextractor.py  which is the main program - still work in progress 
-* pmodel.py  which a module that implements the structure and  actions on training models - still work in progress
+* pmodel.py  which a module that implements the structure and actions on training models - still work in progress
 
 ```
 src/
@@ -46,6 +51,7 @@ src/
 
 ### Training Models
 
+
    40 Controllers ranging from healthcare, finance, to education were manually selected by the researchers and their website’s privacy policies used in this research as the training models. These policies were selected and reviewed manually.  For each controller, the website main page was used as the point of entry to search for its privacy policy link. Next, the policy itself was reviewed and scanned, looking for Opt-in and Opt-out sections  and the different choices  of Opt-out/Opt-in the controller makes available to the user. 
 
 The review process turned out to be more challenging than anticipated as there was no structure or standards shared between these policy documents. In addition, the section header label for Opt-in and Opt-out options varies from one controller to another making it hard to predict the beginning of an Opt-in/Opt-out section within a given document. Moreover, most of these policies did not even have an Opt-in section. Furthermore, the Opt-out choices did not follow a specific structure. For example, it would be easier if all the options available to the user to Opt-in/Opt-out a given policy are provided in structural form – say a list of choices – with a user-friendly label signaling the list and the type of choices. 
@@ -53,33 +59,42 @@ The review process turned out to be more challenging than anticipated as there w
 The lack of structure and standards from Privacy Policy documents makes it hard to create an automation that detects and extracts these Opt-in/Opt-out options. To that end, an xml model was created for each Privacy policy. These xml models were used as the training model for our policy-extractor tool. Each model stores two types of information:
 
 1.	Information about the controller - a label and a link to the controller main page
-2.	Information about the privacy policy – page tittle, first_paragraph, page_url,  optin, optout. 
+2.	Information about the privacy policy – page tittle, first_paragraph, page_url,  optins, optouts. 
 
 ### Model sample:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
-<site name="fec.gov">
-   <link id="Main">
-      <label><![CDATA[FEC.gov Main Page]]></label>
-      <url><![CDATA[https://www.fec.gov/]]></url>
-   </link>
-   <link id="Privacy Policy">
-      <label><![CDATA[Privacy and security policy]]></label>
-      <desc><![CDATA[Thank you for visiting the FEC website and reviewing our privacy and security statement. This webpage outlines our privacy and security policy as it applies to our site as well as third-party sites and applications that the FEC uses.]]></desc>
-      <url><![CDATA[https://www.fec.gov/about/privacy-and-security-policy/]]></url>
+<site name="MaineHealth">
+   <main_page>
+      <label><![CDATA[MaineHealth Main Page]]></label>
+      <url><![CDATA[https://www.mainehealth.org]]></url>
+   </main_page>
+   <privacy_policy>
+      <label><![CDATA[Patient Rights & Privacy]]></label>
+       <desc><![CDATA[This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully.]]></desc>
+      <url><![CDATA[https://www.mainehealth.org/Patients-Visitors/Patient-Rights-Privacy]]></url>
       <optin type="default">
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>How to opt out or disable cookies</label>
-       <url type="cookies"><![CDATA[Cookies setting]]></url>
+       <optout_label>Opting Out of Health Information Exchanges</optout_label>
+       <option type="form"><![CDATA[Fill a form]]></option>
+       <option type="phone"><![CDATA[Toll free number]]></option>
       </optout>
-  </link>
+  </privacy_policy>
 </site>
-```
 
-### How it works
+```
+### pmodel.py 
+
+This module implements  python classes used to load xml models into objects with the actions on these models.
+You can browse these models by running the following command on the commandline:
+
+python pmodel.py
+
+
+### How does policy_scanner works
 
 ```
 Usage: PROG [-h] --curl=main_page_url [--purl=policy_page_url]

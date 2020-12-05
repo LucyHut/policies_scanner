@@ -6,6 +6,9 @@ and the comparison between models.
 Authors: 
    Lucie Hutchins
    Tim Bruce
+
+Modification date: December 04, 2020
+
 """
 
 ##import os
@@ -69,8 +72,12 @@ class PPolicy:
                     moptouts.append({"title":label,"options":options})
         return moptouts
 '''
+A controller is an object with the following members:
+  -- main page -> an object
+  -- list of policies
+
 Args:
-     model xml file
+     model xml file 
 Returns:
      Load the xml element into an object
 Raises:
@@ -124,9 +131,9 @@ Args:
      models base directory
 
 Returns:
-     List of models and that actions on these models
+     List of models and the actions on these models
 Raises:
-    Issues with the models directory
+    Issues with the models 
 
 '''
 class Models:
