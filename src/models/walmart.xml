@@ -12,7 +12,7 @@
          <label><![CDATA[opt-in standard for automated phone and text messages, and for sharing personal information with companies outside our corporate family of companies for their use in direct marketing of their products, such as sending you promotions for their products.]]></label>
       </optin>
       <optout>
-       <label><![CDATA[What are Your Choices?]]></label>
+       <optout_label><![CDATA[What are Your Choices?]]></optout_label>
        <option type="settings"><![CDATA[]]></option>
        <option type="email"><![CDATA[]]></option>
        <option type="phone"><![CDATA[]]></option>

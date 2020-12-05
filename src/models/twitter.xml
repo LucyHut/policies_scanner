@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>settings</label>
+       <optout_label>settings</optout_label>
        <option type="settings"><![CDATA[https://twitter.com/settings/account]]></option>
        <option type="cookies"><![CDATA[https://help.twitter.com/en/rules-and-policies/twitter-cookies]]></option>
       </optout>

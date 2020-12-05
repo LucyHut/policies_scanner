@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>Data Sharing Preferences</label>
+       <optout_label>Data Sharing Preferences</optout_label>
        <option type="cookies"><![CDATA[]]></option>
        <option type="mail"><![CDATA[By mail at Macy's Credit and Customer Services]]></option>
        <option type="phone"><![CDATA[]]></option>

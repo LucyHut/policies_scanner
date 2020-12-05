@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Your Choices</label>
+       <optout_label>Your Choices</optout_label>
        <option type="settings"><![CDATA[https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fsettings]]></option>
        <option type="cookies"><![CDATA[https://www.redditinc.com/policies/cookies]]></option>
       </optout>

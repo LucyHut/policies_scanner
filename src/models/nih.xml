@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>How to Opt Out or Disable Cookies</label>
+       <optout_label>How to Opt Out or Disable Cookies</optout_label>
        <option type="cookies"><![CDATA[https://www.usa.gov/optout-instructions]]></option>
       </optout>
   </privacy_policy>

@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Your choices about tracking and data collection</label>
+       <optout_label>Your choices about tracking and data collection</optout_label>
        <option type="form"><![CDATA[A popup Opt-out form]]></option>
       </optout>
   </privacy_policy>

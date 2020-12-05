@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>What choices do you have</label>
+       <optout_label>What choices do you have</optout_label>
        <option type="cookies"><![CDATA[Internet browsers]]></option>
       </optout>
   </privacy_policy>

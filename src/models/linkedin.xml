@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Choices</label>
+       <optout_label>Choices</optout_label>
        <option type="settings"><![CDATA[https://www.linkedin.com/psettings/guest-controls]]></option>
        <option type="cookies"><![CDATA[https://www.linkedin.com/legal/cookie-policy]]></option>
       </optout>

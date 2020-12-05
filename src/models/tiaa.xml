@@ -12,7 +12,7 @@
          <label><![CDATA[None]]></label>
       </optin>
       <optout>
-       <label>Your right to opt out</label>
+       <optout_label>Your right to opt out</optout_label>
        <option type="cookies"><![CDATA[]]></option>
        <option type="phone"><![CDATA[To opt out of either information sharing or marketing, or both]]></option>
       </optout>

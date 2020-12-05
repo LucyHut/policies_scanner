@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>Affiliate Sharing Opt Out</label>
+       <optout_label>Affiliate Sharing Opt Out</optout_label>
        <option type="email"><![CDATA[]]></option>
       </optout>
   </privacy_policy>

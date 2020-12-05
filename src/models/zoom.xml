@@ -13,7 +13,7 @@
          <url type="cookies"><![CDATA[]]></url>
       </optin>
       <optout>
-       <label>Privacy</label>
+       <optout_label>Privacy</optout_label>
        <option type="settings"><![CDATA[]]></option>
        <option type="email"><![CDATA[]]></option>
        <option type="cookies"><![CDATA[]]></option>

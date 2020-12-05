@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>How to opt out or disable cookies</label>
+       <optout_label>How to opt out or disable cookies</optout_label>
        <option type="cookies"><![CDATA[Cookies setting]]></option>
       </optout>
   </privacy_policy>

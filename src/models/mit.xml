@@ -12,7 +12,7 @@
          <label><![CDATA[None]]></label>
       </optin>
       <optout>
-       <label>Cookies</label>
+       <optout_label>Cookies</optout_label>
        <option type="settings"><![CDATA[Google Analytics Opt-out Browser Add-on]]></option>
       </optout>
   </privacy_policy>

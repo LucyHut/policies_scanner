@@ -12,7 +12,7 @@
          <label><![CDATA[None]]></label>
       </optin>
       <optout>
-       <label><![CDATA[Your Choices and Selecting Your Communication Preferences]]></label>
+       <optout_label><![CDATA[Your Choices and Selecting Your Communication Preferences]]></optout_label>
        <option type="cookies"><![CDATA[]]></option>
        <option type="form"><![CDATA[]]></option>
        <option type="phone"><![CDATA[SMS Services]]></option>

@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Cookies, Tracking and Internet-based Advertising</label>
+       <optout_label>Cookies, Tracking and Internet-based Advertising</optout_label>
        <option type="cookies"><![CDATA[Internet browsers]]></option>
       </optout>
   </privacy_policy>

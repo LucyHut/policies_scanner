@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>California Do Not Sell My Personal Information</label>
+       <optout_label>California Do Not Sell My Personal Information</optout_label>
        <option type="form"><![CDATA[]]></option>
       </optout>
   </privacy_policy>

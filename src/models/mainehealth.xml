@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Opting Out of Health Information Exchanges</label>
+       <optout_label>Opting Out of Health Information Exchanges</optout_label>
        <option type="form"><![CDATA[Fill a form]]></option>
        <option type="phone"><![CDATA[Toll free number]]></option>
       </optout>

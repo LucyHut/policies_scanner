@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Your Rights</label>
+       <optout_label>Your Rights</optout_label>
        <option type="settings"><![CDATA[https://slack.com/account/settings]]></option>
        <option type="cookies"><![CDATA[https://slack.com/trust/compliance/cookie-policy]]></option>
       </optout>

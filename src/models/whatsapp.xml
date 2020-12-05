@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Privacy</label>
+       <optout_label>Privacy</optout_label>
          <option type="settings"><![CDATA[see facebook]]></option>
          <option type="cookies"><![CDATA[see facebook]]></option>
       </optout>

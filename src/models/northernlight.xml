@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label><![CDATA[Choice/Opt-Out]]></label>
+       <optout_label><![CDATA[Choice/Opt-Out]]></optout_label>
        <option type="email"><![CDATA[privacy@northernlight.org]]></option>
       </optout>
   </privacy_policy>

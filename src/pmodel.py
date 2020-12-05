@@ -62,7 +62,7 @@ class PPolicy:
         if xml_optouts is not None:
             for optout in xml_optouts:
                 if optout:
-                    label=optout.find("label").text
+                    label=optout.find("optout_label").text
                     options=[]
                     for option in optout.findall("./option"):
                         options.append({"type":option.attrib["type"],"desc":option.text})

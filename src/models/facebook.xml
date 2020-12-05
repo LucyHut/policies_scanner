@@ -12,7 +12,7 @@
          <label><![CDATA[none]]></label>
       </optin>
       <optout>
-       <label>Facebook Settings</label>
+       <optout_label>Facebook Settings</optout_label>
        <option type="settings"><![CDATA[https://www.facebook.com/settings]]></option>
        <option type="cookies"><![CDATA[https://www.facebook.com/policies/cookies]]></option>
       </optout>

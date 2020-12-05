@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>Your Privacy Rights</label>
+       <optout_label>Your Privacy Rights</optout_label>
        <option type="settings"><![CDATA[]]></option>
        <option type="form"><![CDATA[]]></option>
        <option type="phone"><![CDATA[]]></option>

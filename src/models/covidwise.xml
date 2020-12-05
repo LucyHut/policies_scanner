@@ -12,7 +12,7 @@
          <label><![CDATA[Using the COVIDWISE App is completely voluntary, and you may choose to install and uninstall the COVIDWISE App at any time]]></label>
       </optin>
       <optout>
-       <label>OPTING OUT OF PUSH NOTIFICATIONS</label>
+       <optout_label>OPTING OUT OF PUSH NOTIFICATIONS</optout_label>
        <option type="settings"><![CDATA[You can deactivate push notifications and alerts at any time by deleting the COVIDWISE App, changing your device settings, or changing the push notification settings within the COVIDWISE App.]]></option>
       </optout>
   </privacy_policy>

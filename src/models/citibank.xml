@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>YOUR CHOICES REGARDING YOUR PERSONAL INFORMATION</label>
+       <optout_label>YOUR CHOICES REGARDING YOUR PERSONAL INFORMATION</optout_label>
        <option type="cookies"><![CDATA[]]></option>
        <option type="form"><![CDATA[the DAA website]]></option>
        <option type="phone"><![CDATA[]]></option>

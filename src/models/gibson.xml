@@ -12,7 +12,7 @@
          <label><![CDATA[]]></label>
       </optin>
       <optout>
-       <label>Service Providers</label>
+       <optout_label>Service Providers</optout_label>
        <option type="settings"><![CDATA[Google Analytics opt-out browser add-on]]></option>
       </optout>
   </privacy_policy>

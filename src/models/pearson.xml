@@ -12,7 +12,7 @@
          <label><![CDATA[cookies opt-in]]></label>
       </optin>
       <optout>
-       <label>Cookies and Related Technologies</label>
+       <optout_label>Cookies and Related Technologies</optout_label>
        <option type="cookies"><![CDATA[]]></option>
        <option type="settings"><![CDATA[Do Not Track - browser settings]]></option>
       </optout>
