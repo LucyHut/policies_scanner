@@ -10,7 +10,7 @@ import getopt, os, sys
 from datetime import datetime
 
 from os.path import isdir, dirname, join, abspath, basename
-import pmodel
+# import pmodel
 
 from urllib.parse import urlparse
 
@@ -72,18 +72,18 @@ The tool extracts the Opt-out and Opt-in sections from a given privacy policy do
 
 # This function draws from the links.txt file for URLs.
 def multiple_policy_extraction(urls=[], policy_urls=[]):
-    policies = []
+    policy_objects = []
     if urls:
         for url in urls:            # For every url, instantiate the Policy class with the url
-            policies.append(Policy(website_url=url))
+            policy_objects.append(Policy(website_url=url))
     if policy_urls:
         for url in policy_urls:
-            policies.append(Policy(policy_url=url))
+            policy_objects.append(Policy(policy_url=url))
 
-    for policyObject in policies:               # Output verification
+    for policyObject in policy_objects:               # Output verification
         if policyObject.extracted_policy is not None:
             print("Extracted " + policyObject.policy_url)
-    return policies
+    return policy_objects
 
 
 # Class for storing policy information
@@ -94,11 +94,13 @@ class Policy:
             self.policy_url = policy_url        # URL of the privacy policy
         else:
             self.policy_url = self.retrieve_policy_url()
+            print("Automatically retrieved policy URL for %s.\n Policy found at %s" % (website_url, self.policy_url))
 
         if extracted_policy is not None:
             self.extracted_policy = extracted_policy    # BeautifulSoup of the privacy policy
         else:
             self.extracted_policy = self.retrieve_policy()
+            print("Automatically retrieved policy URL for %s." % (website_url, ))
 
     # Extract the privacy policy URL from the homepage of the website.
     def retrieve_policy_url(self):
@@ -125,15 +127,16 @@ class Policy:
         driver = webdriver.Chrome()
         if self.policy_url is not None:
             try:
-                self.driver.get(self.policy_url)
+                driver.get(self.policy_url)
             except se.InvalidArgumentException:
                 print("Failed " + self.policy_url)
                 driver.close()
                 return None
         else:
+            print("Policy URL not found.")
             driver.close()
             return None
-        policy_html = self.driver.page_source
+        policy_html = driver.page_source
         soup = BeautifulSoup(policy_html, 'html.parser')
         driver.close()
         return soup
@@ -169,6 +172,38 @@ if __name__== "__main__":
     # These two lines are for when the XML component is implemented
     #models = pmodel.Models(model_dir=model_dir)
     #print(models.models_list)
+
+    if controller_url is not None:
+        policies = multiple_policy_extraction(urls=[controller_url])
+
+    for policy in policies:
+
+        # Helper function
+        def print_topics(model, count_vectorizer, n_top_words):
+            words = count_vectorizer.get_feature_names()
+            for topic_idx, topic in enumerate(model.components_):
+                print("LDA:")
+                print(" ".join([words[i]
+                                for i in topic.argsort()[:-n_top_words - 1:-1]]))
+
+        policy_extracted = [str(paragraph.text) for paragraph in policy.extracted_policy.find_all('p')]
+        from sklearn.feature_extraction.text import CountVectorizer
+        from sklearn.decomposition import LatentDirichletAllocation as LDA
+
+        for policy_paragraph in policy_extracted:
+            count_vectorizer = CountVectorizer(stop_words='english')
+            count_data = count_vectorizer.fit_transform(policy_paragraph.split('.'))
+            # Tweak the two parameters below
+            number_topics = 1
+            number_words = 10
+            # Create and fit the LDA model
+            lda = LDA(n_components=number_topics, n_jobs=-1)
+            lda.fit(count_data)
+            # Print the topics found by the LDA model
+            if "controls" in count_vectorizer.get_feature_names():
+                print(policy_paragraph)
+                print_topics(lda, count_vectorizer, number_words)
+                print("\n")
 
     print("%s - %s - %s"%(currentDirectory, basename(__file__),model_dir))
     sys.exit()
